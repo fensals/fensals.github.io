@@ -1,0 +1,22 @@
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3 {
+  color: #007acc;
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.progress-bar {
+  background-color: #007acc;
+}
