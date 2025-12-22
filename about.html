@@ -5,81 +5,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Femi Aleyemi</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Femi Aleyemi</a>
+      <a class="navbar-brand fw-bold" href="index.html">FEMI <span class="text-primary">ALEYEMI</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link active" href="testimonials.html">Testimonials</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- About Section -->
-  <section class="container mt-5">
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <img src="assets/femii.jpg" alt="Femi Aleyemi" class="img-fluid rounded-circle mb-3" width="200" />
-        <h3>Femi Aleyemi</h3>
-        <p class="text-muted">Data Engineer | Data Analyst | Cloud Practitioner</p>
+  <header class="bg-white py-5 border-bottom">
+    <div class="container">
+        <h1 class="display-5 fw-bold text-dark">About Me</h1>
+        <p class="lead text-muted">Bridging the gap between data engineering and financial intelligence.</p>
+    </div>
+  </header>
+
+  <section class="container my-5">
+    <div class="row g-5">
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm p-4 text-center sticky-top" style="top: 100px;">
+          <img src="assets/femii.jpg" alt="Femi Aleyemi" class="img-fluid rounded-4 mb-3 shadow" />
+          <h3 class="fw-bold">Femi Aleyemi</h3>
+          <p class="text-primary fw-semibold">Data Engineer & Analyst</p>
+          <hr>
+          <div class="d-flex justify-content-center gap-3 fs-4">
+            <a href="https://linkedin.com/in/..." class="text-dark"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/..." class="text-dark"><i class="fab fa-github"></i></a>
+            <a href="https://x.com/..." class="text-dark"><i class="fab fa-x-twitter"></i></a>
+          </div>
+          <a href="resume.html" class="btn btn-outline-primary mt-4 w-100">Download CV</a>
+        </div>
       </div>
+
       <div class="col-md-8">
-        <h4>About Me</h4>
-        <p>
-          Femi Aleyemi is a Data Extraction Specialist at 7Seer Analytics with a strong background in banking, an engineering degree, and an MBA in Finance and Investment. He specializes in data extraction, database management, and financial analysis, combining technical expertise with a finance-driven perspective to deliver precise, business-ready solutions.
-        </p>
-        <p>
-          Passionate about transforming complex data into actionable insights, Femi helps organizations streamline access to information and enhance decision-making efficiency.
-        </p>
+        <div class="mb-5">
+          <h4 class="fw-bold border-start border-primary border-4 ps-3 mb-4">Professional Bio</h4>
+          <p class="text-secondary leading-relaxed">
+            Femi Aleyemi is a <strong>Data Extraction Specialist</strong> at 7Seer Analytics with a unique cross-disciplinary background. 
+            By combining an engineering foundation with an MBA in Finance, he delivers data solutions that aren't just technically sound, 
+            but strategically aligned with business ROI.
+          </p>
+        </div>
 
-        <h4 class="mt-4">Education</h4>
-        <ul>        
-          <li>PGD Information Technology, National Open University of Nigeria (2026)</li>
-          <li>M.B.A Finance and Investment, Ahmadu Bello University, Zaria (2019)</li>
-          <li>B.Eng Chemical Engineering, Federal University of Technology, Minna (2011)</li>
-        </ul>
+        <div class="mb-5">
+          <h4 class="fw-bold border-start border-primary border-4 ps-3 mb-4">Core Expertise</h4>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-white text-dark border p-2 px-3">Azure Data Factory</span>
+            <span class="badge bg-white text-dark border p-2 px-3">SQL / Advanced SQL</span>
+            <span class="badge bg-white text-dark border p-2 px-3">Python</span>
+            <span class="badge bg-white text-dark border p-2 px-3">Financial Analysis</span>
+            <span class="badge bg-white text-dark border p-2 px-3">Power BI</span>
+            <span class="badge bg-white text-dark border p-2 px-3">ETL Pipelines</span>
+          </div>
+        </div>
 
-        <h4 class="mt-4">Certifications</h4>
-        <ul>
-          <li>MIT Data Science and Machine Learning – 2022</li>
-          <li>Azure Data Engineering Associate (Coursera) – 2023</li>
-          <li>Azure Data Fundamentals – 2022</li>
-          <li>Google Data Analytics Professional Certificate – 2022</li>
-          <li>Kaggle Advanced SQL – 2023</li>
-          <li>Excel for Data Analysis (Macquarie University) – 2021</li>
-        </ul>
-
-        <h4 class="mt-4">Interests</h4>
-        <p>Puzzles (Sudoku, Rubik’s cubes), playing musical instruments—piano, drums, bass (but not whistling 😄).</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="fw-bold border-start border-primary border-4 ps-3 mb-4">Education</h4>
+                <div class="timeline">
+                    <div class="mb-3">
+                        <small class="text-primary fw-bold">2026 (Candidate)</small>
+                        <p class="mb-0 fw-bold">PGD Information Technology</p>
+                        <small class="text-muted">NOUN</small>
+                    </div>
+                    <div class="mb-3">
+                        <small class="text-primary fw-bold">2019</small>
+                        <p class="mb-0 fw-bold">M.B.A Finance & Investment</p>
+                        <small class="text-muted">ABU Zaria</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4 class="fw-bold border-start border-primary border-4 ps-3 mb-4">Certifications</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-certificate text-primary me-2"></i> MIT Data Science</li>
+                    <li class="mb-2"><i class="fas fa-certificate text-primary me-2"></i> Azure Data Engineer</li>
+                    <li class="mb-2"><i class="fas fa-certificate text-primary me-2"></i> Google Data Analytics</li>
+                </ul>
+            </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light text-center p-4 mt-5">
-    <p>Contact: fensalsdx@gmail.com | +2348075759505 | Abuja, Nigeria</p>
-    <p>
-      <a href="https://github.com/fensals" class="text-light me-3">GitHub</a>
-      <a href="https://linkedin.com/in/femi-aleyemi-50880968/" class="text-light me-3">LinkedIn</a>
-      <a href="https://x.com/fensals" class="text-light">Twitter</a>
-    </p>
-    <p>&copy; 2025 Femi Aleyemi</p>
+  <footer class="bg-dark text-light py-5">
+    <div class="container text-center">
+      <p class="mb-2">fensalsdx@gmail.com | Abuja, Nigeria</p>
+      <p class="text-muted small">&copy; 2025 Femi Aleyemi. Built with precision.</p>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
