@@ -130,6 +130,32 @@ body {
     padding-left: 10px;
 }
 
+/* Gallery Hover Effect */
+.gallery-item {
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+.testimonial-card img {
+    cursor: zoom-in; /* Shows the user the image is clickable */
+}
+
+/* Modal Styling */
+.modal-content {
+    background: #ffffff;
+}
+
+.modal-backdrop.show {
+    opacity: 0.8;
+}
+
+.badge.bg-success {
+    background-color: #1dbf73 !important; /* Fiverr Green */
+}
 @media (max-width: 991px) {
     .profile-card { position: static; margin-bottom: 2rem; }
 }
