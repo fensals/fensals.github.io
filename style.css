@@ -140,70 +140,6 @@ body {
     font-size: 0.75rem;
 }
 
-/* =========================================
-   6. TESTIMONIALS & IMAGES
-   ========================================= */
-.testimonial-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.testimonial-card:hover {
-    transform: translateY(-5px);
-}
-
-.zoom-img {
-    cursor: zoom-in;
-    transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-.zoom-img:hover {
-    filter: brightness(90%);
-}
-
-.badge.bg-success {
-    background-color: #1dbf73 !important; /* Fiverr Green */
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* =========================================
-   7. MODALS & UI COMPONENTS
-   ========================================= */
-.modal-content {
-    background: #ffffff;
-    border: none;
-}
-
-.modal-backdrop.show {
-    opacity: 0.7;
-}
-
-/* Image Modal specific styling */
-#imageModal .modal-content {
-    background: transparent;
-    box-shadow: none;
-}
-
-#imageModal .btn-close-white {
-    filter: invert(1) grayscale(100%) brightness(200%);
-    opacity: 0.8;
-}
-
-/* =========================================
-   8. RESPONSIVE DESIGN
-   ========================================= */
-@media (max-width: 991px) {
-    .profile-card {
-        position: static;
-        margin-bottom: 2rem;
-    }
-    
-    .display-5 {
-        font-size: 2.5rem;
-    }
-}
-
 /* Certificate Link Styling */
 .btn-cert {
     display: inline-block;
@@ -230,4 +166,104 @@ body {
 
 .cert-item {
     padding-bottom: 10px;
+}
+
+/* =========================================
+   6. PROJECTS & SPECIAL TAGS
+   ========================================= */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* MIT Methodology Tags */
+.skill-tag-sm {
+    background-color: #f1f3f5;
+    color: #495057;
+    border: 1px solid #e9ecef;
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.skill-tag-sm:hover {
+    background-color: #343a40;
+    color: #ffffff;
+    border-color: #343a40;
+}
+
+.border-dashed {
+    border: 2px dashed #ddd !important;
+    background: transparent !important;
+}
+
+/* =========================================
+   7. TESTIMONIALS & IMAGES
+   ========================================= */
+.testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.zoom-img {
+    cursor: zoom-in;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.zoom-img:hover {
+    filter: brightness(90%);
+}
+
+.badge.bg-success {
+    background-color: #1dbf73 !important; /* Fiverr Green */
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* =========================================
+   8. MODALS & UI COMPONENTS
+   ========================================= */
+.modal-content {
+    background: #ffffff;
+    border: none;
+}
+
+.modal-backdrop.show {
+    opacity: 0.7;
+}
+
+/* Image Modal specific styling */
+#imageModal .modal-content {
+    background: transparent;
+    box-shadow: none;
+}
+
+#imageModal .btn-close-white {
+    filter: invert(1) grayscale(100%) brightness(200%);
+    opacity: 0.8;
+}
+
+/* =========================================
+   9. RESPONSIVE DESIGN
+   ========================================= */
+@media (max-width: 991px) {
+    .profile-card {
+        position: static;
+        margin-bottom: 2rem;
+    }
+    
+    .display-5 {
+        font-size: 2.5rem;
+    }
 }
