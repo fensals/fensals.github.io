@@ -4,14 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume | Femi Aleyemi</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Femi Aleyemi</a>
+      <a class="navbar-brand fw-bold" href="index.html">FEMI <span class="text-primary">ALEYEMI</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -21,66 +24,113 @@
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
           <li class="nav-item"><a class="nav-link active" href="resume.html">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link active" href="testimonials.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Resume Section -->
-  <section class="container mt-5">
-    <h2 class="text-center mb-4">Resume</h2>
-    <div class="text-center mb-4">
-      <a href="assets/Femi-Aleyemi-Resume.pdf" class="btn btn-primary" target="_blank">Download PDF</a>
+  <main class="container my-5">
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-8">
+        <h1 class="display-5 fw-bold mb-0">Resume</h1>
+        <p class="text-muted lead">Expertise in Data Engineering, Extraction, and Analytics.</p>
+      </div>
+      <div class="col-md-4 text-md-end">
+        <a href="assets/Femi-Aleyemi-Resume.pdf" class="btn btn-primary btn-lg shadow-sm fw-bold" target="_blank">
+            <i class="fas fa-file-pdf me-2"></i>Download PDF
+        </a>
+      </div>
     </div>
 
-    <h4>Professional Experience</h4>
-    <ul>
-      <li>
-        <strong>Data Extraction Specialist</strong> – 7Seer Ltd (Remote)  
-        <br /><em>April 2021 – Present</em>
-        <ul>
-          <li>Developed and maintained data pipelines for various clients, ensuring data integrity and efficiency.</li>
-          <li>Provisioned and deployed client databases for data collection and storage.</li>
-          <li>Automated data workflows and reporting using Python.</li>
-          <li>Reduced manual effort and increased client sales by up to 100% through dynamic price monitoring automation.</li>
-          <li>Maintained data integrity across platforms via robust API integration.</li>
-          <li>Collaborated with clients and stakeholders to define and understand business requirements.</li>
-        </ul>
-      </li>
-    </ul>
+    <div class="row g-5">
+      <div class="col-lg-8">
+        <h3 class="section-title mb-4">Work Experience</h3>
 
-    <h4 class="mt-4">Education</h4>
-    <ul>
-      <li>B.Eng Chemical Engineering – Federal University of Technology, Minna (2011)</li>
-      <li>M.B.A Finance and Investment – Ahmadu Bello University, Zaria (2019)</li>
-      <li>PGD Information Technology – National Open University of Nigeria (2026)</li>
-    </ul>
+        <div class="resume-item border-start border-primary border-3 ps-4 pb-5 position-relative">
+          <div class="timeline-dot bg-primary"></div>
+          <h5 class="fw-bold mb-1">Data Engineer</h5>
+          <div class="text-primary fw-semibold mb-2">7seer Ltd | April 2022 – Present</div>
+          <p class="text-muted small mb-3"><i class="fas fa-location-dot me-2"></i>Abuja, Nigeria (Remote)</p>
+          <ul class="text-secondary small leading-relaxed">
+            <li>Built an end-to-end <strong>FAANG stock data pipeline</strong> using Apache Airflow (Docker), BigQuery, dbt, and Terraform, delivering a Looker Studio analytics dashboard.</li>
+            <li>Engineered a complete <strong>Azure-based sales analytics platform</strong>: orchestrated ingestion via Data Factory, multi-stage transformations in Databricks, and visualization in Power BI.</li>
+            <li>Designed and maintained scalable data pipelines for E-commerce platforms, ensuring high data accuracy and integrity.</li>
+            <li>Developed OTC market-data extraction pipelines with cloud scheduling for daily automated email delivery.</li>
+            <li>Automated pricing analytics that dynamically adjusted product prices based on competitor data, <strong>increasing client sales by 100%</strong>.</li>
+            <li>Provisioned and optimized cloud infrastructure across Azure, GCP, and PythonAnywhere.</li>
+          </ul>
+        </div>
 
-    <h4 class="mt-4">Certifications</h4>
-    <ul>
-      <li>MIT Data Science and Machine Learning – 2022</li>
-      <li>Azure Data Engineering Associate (Coursera) – 2023</li>
-      <li>Azure Data Fundamentals – 2022</li>
-      <li>Google Data Analytics Professional Certificate – 2022</li>
-      <li>Kaggle Advanced SQL – 2023</li>
-      <li>Excel for Data Analysis (Macquarie University) – 2021</li>
-    </ul>
-  </section>
+        <div class="resume-item border-start border-primary border-3 ps-4 pb-4 position-relative">
+          <div class="timeline-dot bg-primary"></div>
+          <h5 class="fw-bold mb-1">Data Analyst</h5>
+          <div class="text-primary fw-semibold mb-2">7seer Ltd | April 2021 – April 2022</div>
+          <p class="text-muted small mb-3"><i class="fas fa-location-dot me-2"></i>Abuja, Nigeria</p>
+          <ul class="text-secondary small leading-relaxed">
+            <li>Designed Tableau and Power BI dashboards tracking conversion rates, order fulfillment, and customer retention metrics.</li>
+            <li>Implemented SQL-based data models that <strong>reduced reporting lag by 80%</strong>.</li>
+            <li>Extracted, cleaned, and transformed operational data to identify performance trends and revenue opportunities.</li>
+            <li>Collaborated with leadership to automate key business KPIs for real-time visibility.</li>
+          </ul>
+        </div>
+      </div>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light text-center p-4 mt-5">
-    <p>Contact: fensalsdx@gmail.com | +2348075759505 | Abuja, Nigeria</p>
-    <p>
-      <a href="https://github.com/fensals" class="text-light me-3">GitHub</a>
-      <a href="https://linkedin.com/in/femi-aleyemi-50880968/" class="text-light me-3">LinkedIn</a>
-      <a href="https://x.com/fensals" class="text-light">Twitter</a>
-    </p>
-    <p>&copy; 2025 Femi Aleyemi</p>
+      <div class="col-lg-4">
+        <h3 class="section-title mb-4">Education</h3>
+        <div class="mb-4">
+          <div class="mb-3">
+            <h6 class="fw-bold mb-0">PGD Information Technology</h6>
+            <p class="small text-muted mb-0">National Open University of Nigeria (2026)</p>
+          </div>
+          <div class="mb-3">
+            <h6 class="fw-bold mb-0">M.B.A Finance and Investment</h6>
+            <p class="small text-muted mb-0">Ahmadu Bello University, Zaria (2019)</p>
+          </div>
+          <div class="mb-3">
+            <h6 class="fw-bold mb-0">B.Eng Chemical Engineering</h6>
+            <p class="small text-muted mb-0">Federal University of Technology, Minna (2011)</p>
+          </div>
+        </div>
+
+        <h3 class="section-title mb-4 mt-5">Training & Certs</h3>
+        <div class="training-list">
+            <div class="mb-3">
+                <small class="text-primary fw-bold">2025</small>
+                <p class="small fw-bold mb-0">Data Engineering Zoomcamp</p>
+                <p class="text-muted x-small">Datatalks Club</p>
+            </div>
+            <div class="mb-3">
+                <small class="text-primary fw-bold">2023</small>
+                <p class="small fw-bold mb-0">Azure Data Engineer Associate</p>
+                <p class="text-muted x-small">Microsoft / Coursera</p>
+            </div>
+            <div class="mb-3">
+                <small class="text-primary fw-bold">2022</small>
+                <p class="small fw-bold mb-0">Data Science & Machine Learning</p>
+                <p class="text-muted x-small">MIT / Great Learning</p>
+            </div>
+            <div class="mb-3">
+                <small class="text-primary fw-bold">2022</small>
+                <p class="small fw-bold mb-0">Google Data Analytics Professional</p>
+                <p class="text-muted x-small">Google / Coursera</p>
+            </div>
+            <div class="mb-3">
+                <small class="text-primary fw-bold">2021</small>
+                <p class="small fw-bold mb-0">Excel for Data Analysis</p>
+                <p class="text-muted x-small">Macquarie University</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-light py-5">
+    <div class="container text-center">
+      <p class="mb-2 small">Always curious, always learning, always open to new data adventures - @fensals 2025</p>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
