@@ -98,6 +98,38 @@ body {
     font-weight: 500;
 }
 
+
+/* Timeline Effect for Resume */
+.resume-item {
+    position: relative;
+}
+
+.timeline-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: -7.5px;
+    top: 5px;
+    border-radius: 50%;
+}
+
+.leading-relaxed {
+    line-height: 1.8;
+}
+
+.x-small {
+    font-size: 0.75rem;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-left: 3px solid #007bff;
+    padding-left: 10px;
+}
+
 @media (max-width: 991px) {
     .profile-card { position: static; margin-bottom: 2rem; }
 }
