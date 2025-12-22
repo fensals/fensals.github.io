@@ -1,36 +1,99 @@
+/* General Styles */
 body {
     font-family: 'Inter', sans-serif;
-    color: #333;
-    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2d3436;
+}
+
+.text-primary { color: #007bff !important; }
+.bg-dark { background-color: #1e272e !important; }
+
+/* Navbar */
+.navbar {
+    padding: 1rem 0;
+    backdrop-filter: blur(10px);
 }
 
 .navbar-brand {
-    letter-spacing: 1px;
+    font-size: 1.4rem;
+    letter-spacing: -0.5px;
 }
 
-.card {
-    border-radius: 15px;
-    transition: transform 0.3s ease;
+/* Sidebar Card */
+.profile-card {
+    position: sticky;
+    top: 100px;
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
-.badge {
-    font-weight: 500;
-    font-size: 0.9rem;
-    color: #444 !important;
+.profile-img {
+    transition: transform 0.4s ease;
 }
 
-h4 {
-    font-size: 1.25rem;
+.profile-img:hover {
+    transform: scale(1.02);
+}
+
+.social-icon {
+    font-size: 1.2rem;
+    color: #4b6584;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #007bff;
+    transform: translateY(-3px);
+}
+
+/* Content Sections */
+.section-title {
+    font-weight: 700;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    color: #1e272e;
+    border-left: 4px solid #007bff;
+    padding-left: 1rem;
 }
 
-/* Custom Primary Color (Change this to any color you like) */
-.text-primary, .btn-outline-primary, .border-primary {
-    color: #0d6efd !important;
-    border-color: #0d6efd !important;
-}
-
-.leading-relaxed {
+.lead-text {
+    font-size: 1.2rem;
     line-height: 1.8;
+    color: #444;
+}
+
+/* Tech Stack Boxes */
+.tech-box {
+    background: white;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    border: 1px solid #edf2f7;
+    transition: all 0.3s ease;
+}
+
+.tech-box i {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tech-box span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #718096;
+}
+
+.tech-box:hover {
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    border-color: #007bff;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 991px) {
+    .profile-card {
+        position: static;
+        margin-bottom: 2rem;
+    }
 }
