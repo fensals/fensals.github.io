@@ -1,3 +1,4 @@
+/* Core Styling */
 body {
     font-family: 'Inter', sans-serif;
     background-color: #fcfcfc;
@@ -8,14 +9,27 @@ body {
 .profile-card {
     position: sticky;
     top: 90px;
-    border: 1px solid #eee;
+    border-radius: 16px;
+    z-index: 10;
 }
 
 .profile-img {
-    max-width: 150px;
+    max-width: 160px;
 }
 
-/* Section Title */
+.social-icon {
+    font-size: 1.3rem;
+    color: #4b6584;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #007bff;
+    transform: translateY(-3px);
+}
+
+/* Section Titles */
 .section-title {
     font-weight: 700;
     font-size: 0.9rem;
@@ -37,10 +51,10 @@ body {
     margin-bottom: 10px;
 }
 
-/* Smaller Tech Boxes */
+/* Tech Grid */
 .tech-box {
     background: white;
-    padding: 0.8rem 0.3rem; /* Reduced padding */
+    padding: 0.8rem 0.3rem;
     border-radius: 8px;
     border: 1px solid #f0f0f0;
     transition: 0.2s ease-in-out;
@@ -52,18 +66,18 @@ body {
 }
 
 .tech-box i {
-    font-size: 1.5rem; /* Smaller icons */
+    font-size: 1.5rem;
     margin-bottom: 5px;
 }
 
 .tech-box span {
-    font-size: 0.65rem; /* Smaller text */
+    font-size: 0.65rem;
     font-weight: 600;
     color: #666;
 }
 
 .svg-icon {
-    width: 24px; /* Scaled SVG to match FontAwesome size */
+    width: 24px;
     height: 24px;
     margin-bottom: 5px;
 }
@@ -74,7 +88,7 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* Soft Skills */
+/* Soft Skills list items */
 .soft-skill-item {
     background: #fff;
     padding: 8px 12px;
