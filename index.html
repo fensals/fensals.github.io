@@ -3,69 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Femi Aleyemi | Data Engineer</title>
+  <title>About | Femi Aleyemi</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Femi Aleyemi</a>
+      <a class="navbar-brand fw-bold" href="index.html">FEMI <span class="text-primary">ALEYEMI</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link active" href="testimonials.html">Testimonials</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="container text-center mt-5">
-    <img src="assets/femii.jpg" alt="Femi Aleyemi" class="rounded-circle mb-3" width="150" />
-    <h1>Femi Aleyemi</h1>
-    <h4>Data Engineer | Data Analyst </h4>
-    <p class="lead mt-3">
-      Data Extraction Specialist at 7Seer Analytics with a strong background in banking, engineering, and finance. Passionate about transforming complex data into actionable insights.
-    </p>
-  </header>
+  <main class="container my-5">
+    <div class="row g-5">
+      
+      <aside class="col-lg-4">
+        <div class="profile-card p-4 rounded-4 shadow-sm bg-white text-center">
+          <img src="assets/femii.jpg" alt="Femi Aleyemi" class="img-fluid rounded-4 mb-3 shadow-sm profile-img" />
+          <h2 class="fw-bold h4">Femi Aleyemi</h2>
+          <p class="text-muted small">Data Engineer | Data Analyst</p>
+          
+          <div class="d-flex justify-content-center gap-3 my-3">
+            <a href="https://linkedin.com/in/femi-aleyemi-50880968/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/fensals" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://x.com/fensals" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+          </div>
+          
+          <hr>
+          
+          <div class="text-start mt-4">
+            <p class="small mb-1"><i class="fas fa-envelope text-primary me-2"></i> fensalsdx@gmail.com</p>
+            <p class="small mb-1"><i class="fas fa-map-marker-alt text-primary me-2"></i> Abuja, Nigeria</p>
+          </div>
+          
+          <a href="resume.html" class="btn btn-primary w-100 mt-4 py-2 fw-bold">View Full Resume</a>
+        </div>
+      </aside>
 
-  <!-- Skills Section -->
-  <section class="container mt-5">
-    <h2 class="text-center mb-4">Skills</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <h5>Programming</h5>
-        <div class="progress mb-2"><div class="progress-bar" style="width: 90%">Python</div></div>
-        <div class="progress mb-2"><div class="progress-bar" style="width: 85%">SQL</div></div>
-        <div class="progress mb-2"><div class="progress-bar" style="width: 60%">R</div></div>
-      </div>
-      <div class="col-md-6">
-        <h5>Tools & Platforms</h5>
-        <div class="progress mb-2"><div class="progress-bar" style="width: 80%">Airflow</div></div>
-        <div class="progress mb-2"><div class="progress-bar" style="width: 75%">Docker</div></div>
-        <div class="progress mb-2"><div class="progress-bar" style="width: 70%">Azure</div></div>
-      </div>
+      <section class="col-lg-8">
+        <div class="mb-5">
+          <h3 class="section-title">Professional Bio</h3>
+          <p class="lead-text">
+            I am a <strong>Data Extraction Specialist</strong> at 7Seer Analytics with an MBA in Finance and an Engineering background. I bridge the gap between complex technical infrastructure and strategic financial insights.
+          </p>
+          <p class="text-secondary">
+            Passionate about building robust ETL pipelines and transforming raw data into business intelligence. My goal is to help organizations optimize their data workflows for maximum efficiency.
+          </p>
+        </div>
+
+        <div class="mb-5">
+          <h3 class="section-title">Tech Stack</h3>
+          <div class="row g-3 text-center">
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="tech-box">
+                <i class="devicon-azure-plain colored"></i>
+                <span>Azure</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="tech-box">
+                <i class="devicon-python-plain colored"></i>
+                <span>Python</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="tech-box">
+                <i class="devicon-azuresqldatabase-plain colored"></i>
+                <span>SQL</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="tech-box">
+                <i class="devicon-apachespark-original colored"></i>
+                <span>Spark</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="tech-box">
+                <i class="devicon-databricks-original colored"></i>
+                <span>Databricks</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="tech-box">
+                <i class="devicon-microsoftoffice-plain colored"></i>
+                <span>Excel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h3 class="section-title">Education</h3>
+            <div class="timeline-item mb-3">
+              <span class="badge bg-light text-primary border border-primary mb-1">2026 (Expected)</span>
+              <h6 class="fw-bold mb-0">PGD Information Technology</h6>
+              <p class="small text-muted">National Open University of Nigeria</p>
+            </div>
+            <div class="timeline-item">
+              <span class="badge bg-light text-primary border border-primary mb-1">2019</span>
+              <h6 class="fw-bold mb-0">M.B.A Finance and Investment</h6>
+              <p class="small text-muted">Ahmadu Bello University, Zaria</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3 class="section-title">Key Certifications</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> MIT Data Science & ML</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Azure Data Engineer Associate</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Google Data Analytics Professional</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-5 p-4 bg-light rounded-4">
+          <h5 class="fw-bold"><i class="fas fa-heart text-danger me-2"></i> Beyond the Data</h5>
+          <p class="mb-0 small text-secondary">
+            When I'm not architecting data pipelines, you'll find me solving Rubik’s cubes, mastering Sudoku, or playing the piano, drums, or bass. 
+            <span class="fst-italic">(Still haven't mastered whistling, though! 😄)</span>
+          </p>
+        </div>
+      </section>
     </div>
-  </section>
+  </main>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light text-center p-4 mt-5">
-    <p>Contact: fensalsdx@gmail.com | +2348075759505 | Abuja, Nigeria</p>
-    <p>
-      <a href="https://github.com/fensals" class="text-light me-3">GitHub</a>
-      <a href="https://linkedin.com/in/femi-aleyemi-50880968/" class="text-light me-3">LinkedIn</a>
-      <a href="https://x.com/fensals" class="text-light">Twitter</a>
-    </p>
-    <p>&copy; 2025 Femi Aleyemi</p>
+  <footer class="bg-dark text-light py-5 mt-5">
+    <div class="container text-center">
+      <p class="mb-0 small">&copy; 2025 Femi Aleyemi | Abuja, Nigeria</p>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
