@@ -24,3 +24,15 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(box);
     });
 });
+
+// Initialize LightGallery for Testimonials
+document.addEventListener('DOMContentLoaded', function() {
+    const el = document.getElementById('lightgallery');
+    if (el) {
+        lightGallery(el, {
+            speed: 500,
+            download: false, // Prevents direct download button on image
+            selector: '.gallery-item'
+        });
+    }
+});
