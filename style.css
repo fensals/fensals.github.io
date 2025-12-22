@@ -1,116 +1,89 @@
-/* Core Styling */
 body {
     font-family: 'Inter', sans-serif;
     background-color: #fcfcfc;
     color: #333;
-    line-height: 1.6;
 }
-
-.text-primary { color: #007bff !important; }
 
 /* Sidebar Profile */
 .profile-card {
     position: sticky;
     top: 90px;
     border: 1px solid #eee;
-    transition: all 0.3s ease;
 }
 
 .profile-img {
-    filter: grayscale(20%);
-    transition: 0.4s ease;
+    max-width: 150px;
 }
 
-.profile-img:hover {
-    filter: grayscale(0%);
-    transform: scale(1.02);
-}
-
-.social-icon {
-    font-size: 1.2rem;
-    color: #666;
-    transition: 0.3s;
-}
-
-.social-icon:hover {
-    color: #007bff;
-    transform: translateY(-3px);
-}
-
-/* Sections */
+/* Section Title */
 .section-title {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin-bottom: 1.5rem;
-    color: #111;
-    border-left: 4px solid #007bff;
-    padding-left: 1rem;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #007bff;
+    padding-left: 10px;
 }
 
-.lead-text {
-    font-size: 1.15rem;
-    font-weight: 400;
-    color: #444;
-}
+.lead-text { font-size: 1.1rem; }
 
 .stack-label {
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: #999;
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: #bbb;
     letter-spacing: 1px;
-    margin-top: 2rem;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 5px;
+    margin-top: 1.5rem;
+    margin-bottom: 10px;
 }
 
-/* Tech Grid */
+/* Smaller Tech Boxes */
 .tech-box {
     background: white;
-    padding: 1.2rem 0.5rem;
-    border-radius: 12px;
+    padding: 0.8rem 0.3rem; /* Reduced padding */
+    border-radius: 8px;
     border: 1px solid #f0f0f0;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.2s ease-in-out;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .tech-box i {
-    font-size: 2.2rem;
-    display: block;
-    margin-bottom: 8px;
+    font-size: 1.5rem; /* Smaller icons */
+    margin-bottom: 5px;
 }
 
 .tech-box span {
-    font-size: 0.75rem;
+    font-size: 0.65rem; /* Smaller text */
     font-weight: 600;
-    color: #555;
-    display: block;
+    color: #666;
+}
+
+.svg-icon {
+    width: 24px; /* Scaled SVG to match FontAwesome size */
+    height: 24px;
+    margin-bottom: 5px;
 }
 
 .tech-box:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    transform: translateY(-5px);
     border-color: #007bff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 /* Soft Skills */
 .soft-skill-item {
     background: #fff;
-    padding: 12px 15px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    border: 1px solid #f3f3f3;
     font-weight: 500;
-    font-size: 0.95rem;
-    display: flex;
-    align-items: center;
 }
 
-/* Responsive */
 @media (max-width: 991px) {
-    .profile-card {
-        position: static;
-        margin-bottom: 3rem;
-    }
+    .profile-card { position: static; margin-bottom: 2rem; }
 }
