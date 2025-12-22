@@ -1,22 +1,36 @@
 body {
-  background-color: #f8f9fa;
-  color: #333;
-  font-family: 'Segoe UI', sans-serif;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
 }
 
-h1, h2, h3 {
-  color: #007acc;
+.navbar-brand {
+    letter-spacing: 1px;
 }
 
-.navbar {
-  margin-bottom: 30px;
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
 }
 
-footer {
-  background-color: #343a40;
-  color: #fff;
+.badge {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #444 !important;
 }
 
-.progress-bar {
-  background-color: #007acc;
+h4 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Custom Primary Color (Change this to any color you like) */
+.text-primary, .btn-outline-primary, .border-primary {
+    color: #0d6efd !important;
+    border-color: #0d6efd !important;
+}
+
+.leading-relaxed {
+    line-height: 1.8;
 }
